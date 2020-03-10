@@ -1,15 +1,19 @@
-BASH File that does the following
+BASH File that does the following:
 
-extracts IP's from database to csv
+1- extracts IP's from database to csv
+2- converts csv to txt
+3- Moves text to HTML location
+4- Sorts and removes duplicate IP's
+5- Deletes source txt
+6- Searches for IP that we want to remove (whitlisted)
 
-converts csv to txt
+Use case:
 
-Moves text to HTML location
+Create this script as a BASH and then add to a CRON job to run every 5 minutes and you will have realtime blacklist feed from honeypots
 
-Sorts and removes duplicate IP's
 
-Deletes source txt
+commands to scedule job:
 
-Searches for IP that we want to remove (whitlisted)
-
-Create this script as BASH and the add to CRON job to run every 5 minutes and you will have realtime blacklist feed from honeypots
+sudo crontab -e
+add to file 
+*/5 * * * * /commandpath/NoDuplicate.sh
