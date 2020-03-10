@@ -15,5 +15,7 @@ Create this script as a BASH and then add to a CRON job to run every 5 minutes a
 commands to scedule job:
 
 sudo crontab -e
+
 add to file 
+
 */5 * * * * /commandpath/NoDuplicate.sh
