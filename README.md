@@ -1,11 +1,17 @@
 BASH File that does the following:
 
 1- extracts IP's from database to csv
+
 2- converts csv to txt
+
 3- Moves text to HTML location
+
 4- Sorts and removes duplicate IP's
+
 5- Deletes source txt
+
 6- Searches for IP that we want to remove (whitlisted)
+
 
 Use case:
 
